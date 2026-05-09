@@ -53,3 +53,15 @@ print("result5: ", result5)
 
 result6 = give_greet("John")
 print("result6: ", result6)
+
+
+print("===== SCOPE ======")  
+b = 100 #3
+
+# Define
+def calculate(a, b): #2 
+    c = a*b #1
+    print(f"the c value: {c}")
+
+#Call 
+calculate(5, 50)
