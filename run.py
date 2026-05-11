@@ -1,7 +1,7 @@
 # print("Hello World")
 # print("PYTHON: Everyting is object")
 
-# Dunder __builtins__, __init__  
+# Dunder __builtins__, __init__
 
 message = "PYTHON: Everything is object!"
 print(message)
