@@ -7,9 +7,9 @@ OBJECTS
 '''
 
 
-import array # package/module
-import math # package
-from math import ceil # bunda ceilni ozini qolga olamz
+import array  # package/module
+import math  # package
+from math import ceil  # bunda ceilni ozini qolga olamz
 
 print("===== What is object =====")
 # An object has state and method properties.
@@ -26,8 +26,8 @@ print(type(math))
 # Paradigms > Functional Programming & OOP (object oriented programming)
 # OOP 4 CONCEPTS > Abstraction | Encapsulation | Inheritance | Polimorphism
 
-result1 = math.ceil(97.7) # CALL
-print("result1:", result1)  
+result1 = math.ceil(97.7)  # CALL
+print("result1:", result1)
 
 result2 = ceil(99.7)
 print("result2:", result2)
