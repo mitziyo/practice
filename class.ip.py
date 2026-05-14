@@ -7,10 +7,10 @@ CLASS deep diving
 
 print("======= INHERITANCE =======")
 # Parent > child
-# Parnt only provides public and protected properties to children 
+# Parnt only provides public and protected properties to children
 
 
-class Animal():
+class Animal:
     description = "the class is parent for animals"
 
     def __init__(self, voice):
@@ -33,6 +33,9 @@ class Dog(Animal):  # child
 
     def protect(self):
         print("Yes, I can protect you!")
+
+    def make_voice(self):
+        print(f"the {self.name} says {self.sound}")
 
 
 class Cat(Animal):  # child
@@ -83,3 +86,23 @@ print(Dog.description)
 print(dog.voice, fish.voice)
 print("status:", dog.status)
 print("status:", cat.status)
+
+
+print("======= Polimorphism =======")
+dog.make_voice()
+fish.make_voice()
+
+print("------------")
+# fish > Fish > Animal > object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+result = a and b and c and d
+print(f"the result: {result}")
+
+
+# Fish > Animal > object
+data1 = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object)
+print("data:", data1, data2)
