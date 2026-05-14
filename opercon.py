@@ -44,3 +44,49 @@ print("c is d", c is d)
 print("c is e", c is e)
 
 # valueni tekshrish uchun == / reference uchun esa is
+
+
+print("======= Conditions =======")
+# conditions Truthy and falsyni tekshradi har doim
+x = 5
+
+if x > 50:
+    print("case A")
+elif x > 10:
+    print("case B")
+else:
+    print("case C")
+
+
+print("======= Logical operators =======")
+
+print("-----------------")
+age = 18
+# person = None
+
+# if age > 16:
+#     person = "adult"
+# else:
+#     person = "child"
+
+# print("person:", person)
+
+# Ternary operator
+person = "adult" if age > 18 else "minor"
+print("person:", person)
+
+print("-----------------")
+
+is_student = True
+is_admin = False
+is_guest = True
+is_parent = True
+
+if not is_student:
+    print("Welcome here, do you want to be student")
+elif is_admin:
+    print("Please go to the office")
+elif is_guest or is_parent:
+    print("waiting room is over there")
+else:
+    print("Other case")
