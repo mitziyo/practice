@@ -41,3 +41,22 @@ for x in range(1, 20, 5):
         break
 else:
     print("Excuted successfully")
+
+print("======= while operatori =======")
+numb = 40
+while numb > 0:
+    numb -= 10
+    print(f"the numb equals {numb}")
+
+print("------------------")
+# takrorlanish anniq bolmagan holatda while ishlatiladi
+count = 0
+while True:
+    count += 1
+    x = int(input("Find numbers: "))
+
+    if x == 41:
+        print(f"You found number in {count} steps")
+        break
+    else:
+        print("Wrong, please find again")
