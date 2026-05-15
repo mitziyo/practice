@@ -21,7 +21,9 @@ class Animal:
         print(f"the animal can make voice {self.voice}")
 
 
-class Dog(Animal):  # child
+
+
+class Dog(Animal):  # child 
 
     def __init__(self, name, sound, voice):
         self.name = name

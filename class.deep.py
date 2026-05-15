@@ -34,10 +34,10 @@ class Account():
     def holder(self):
         return self.__owner
 
-    @holder.setter
-    def holder(self, new_owner):
-        print("holder.setter:", new_owner)
-        self.__owner = new_owner
+    # @holder.setter
+    # def holder(self, new_owner):
+    #     print("holder.setter:", new_owner)
+    #     self.__owner = new_owner
 
 
 my_account = Account("Shawn", 1000)
@@ -58,7 +58,8 @@ except Exception as err:
 
 # getter and setter
 
-print("owner before:", my_account.holder)  # state
-# my_account.change_ownership("Martin")
-my_account.holder = "Martin"  # state
-print("owner after:", my_account.holder)
+
+# print("owner before:", my_account.holder)  # state
+# # my_account.change_ownership("Martin")
+# my_account.holder = "Martin"  # state
+# print("owner after:", my_account.holder)
