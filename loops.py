@@ -31,3 +31,13 @@ for key in car_obj:
 print("------------------")
 for x in range(1, 20, 5):
     print(f"the x {x}")
+
+
+print("======= break/else =======")
+for x in range(1, 20, 5):
+    print(f"the x: {x}")
+    if x > 100:
+        print("reached break")
+        break
+else:
+    print("Excuted successfully")
