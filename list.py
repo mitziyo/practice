@@ -103,3 +103,49 @@ print("peoplee", peoplee)
 # sorted by age via lambda
 peoplee.sort(key=lambda personn: personn[1])
 print("people2", peoplee)
+
+print("======= enumerate, map and filter =======")
+
+# enumerate for index and .values
+animals = ["dog", "cat", "fish"]  # list
+for element in enumerate(animals):
+    print("element:", element)
+
+print("-------")
+for (index, value) in enumerate(animals):
+    print(f"the index: {index} and value {value}")
+
+
+# similar in dictionary
+car_obj = dict(brand="Ferrari", year=2025)  # dict \
+resul = car_obj.items()  # key va valueni brga tuple qb beradi
+for (key, value) in resul:
+    print(f"the key {key} and value {value}")
+
+
+print("---------")
+# map
+cars = [
+    ("Ferrari", 78),
+    ("Tayota", 87),
+    ("Audi", 117),
+    ("BMW", 109),
+    ("Pogani", 33)
+]
+
+new_cars = []
+for car in cars:
+    new_cars.append(car[0])
+print("new_car:", new_cars)
+
+resultt1 = map(lambda car: car[0], cars)
+print(f"the result: {resultt1} and type: {type(resultt1)}")
+
+new_cars = list(resultt1)
+print("new_cars(2)", new_cars)
+
+print("-----------")
+# filter
+result_filter = filter(lambda car: car[1] > 80, cars)
+print(f"the result_filter: {result_filter} and type: {type(result_filter)}")
+print(list(result_filter))
