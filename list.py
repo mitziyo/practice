@@ -83,7 +83,7 @@ new_numbs = sorted(numbs)
 print(f"the sorted numbs: {numbs} and new_numbs: {new_numbs}")
 
 
-print("======= Lambada function =======")
+print("======= Lambada function ======")
 # Lambda is small anonymous function
 def calculate(x, y): return x*y
 
