@@ -45,3 +45,17 @@ cars = [
 
 list_cars = [car[0] for car in cars if car[1] > 80]
 print("list_cars:", list_cars)
+
+print("======= set and ditionary comprehension =======")
+numbs = [1, 5, 4, 20, 4, 5, 1, 4]
+set_numbs = {*numbs}  # a version
+print("set_numbs:", set_numbs)
+
+print("-------------")
+dict_people = {person[0]: person[1] for person in people}  # b version
+print("dict_people:", dict_people)
+
+print("-----------")
+dict_people2 = {person[0]: person[1] for person in people if person[1] > 20}  # b version
+print("dict_people2:", dict_people2) # c version
+
