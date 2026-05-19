@@ -11,12 +11,12 @@ print("======= Python Packages and Core packages =======")
 #  Core Package > https://docs.python.org/3/library
 
 # Core package
-t = turtle.Turtle()
-t.shape("turtle")
-t.speed(1)
-t.circle(100)
+# t = turtle.Turtle()
+# t.shape("turtle")
+# t.speed(1)
+# t.circle(100)
 
-turtle.done()
+# turtle.done()
 
 my_file = open("material/message.txt", "r")
 try:
@@ -31,49 +31,15 @@ with open("material/message.txt", "r") as your_file:
     print("your_content:", your_content)
 print("DONE")
 
+print("======= Package manager & External Package =======")
+# External packages https://pypi.org/
+# Package manager pip/pipenv  bur orqali external packagelarni ornatish uchun ishlatiladi
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+from PIL import Image
+with Image.open("material/nature.jpg") as img_obj:
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save("material/sample.png")
 
 
 '''
