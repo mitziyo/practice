@@ -5,6 +5,7 @@ Packages and debuggung
 (3) Debugging
 '''
 
+from PIL import Image
 import turtle
 print("======= Python Packages and Core packages =======")
 ''' Python Packages/Modules: Core, File and External '''
@@ -35,7 +36,6 @@ print("======= Package manager & External Package =======")
 # External packages https://pypi.org/
 # Package manager pip/pipenv  bur orqali external packagelarni ornatish uchun ishlatiladi
 
-from PIL import Image
 with Image.open("material/nature.jpg") as img_obj:
     resized_img = img_obj.resize((200, 200))
     resized_img.show()
@@ -110,3 +110,17 @@ for angle in [0, 60, 120]:
 t.hideturtle()
 turtle.done()
 '''
+
+print("======= Debugging =======")
+
+#Define
+def get_summary(*args):
+    total_amount = 0
+    for a in args:
+        total_amount += a
+    return total_amount # find the bug via debugging
+
+test = 100
+#Call
+result = get_summary(1,2,3,4,5)
+print("result:", result)
